@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping</title>
+    <link rel="stylesheet" href="shopping.css" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- AWAL NAVBAR -->
+    <header>
+      <section class="logo">
+        <p>
+          <a href="home.html">
+            <img src="img/logo.png" width="173px" height="119px" />
+          </a>
+        </p>
+        <div class="searchbar">
+          <img src="img/search.svg" fill="white" width="35px" height="35px" />
+          <input type="text" id="input-box" placeholder="Fit Yourself..." />
+          <div class="result-box"></div>
+        </div>
+      </section>
+
+      <section class="buttonHeader">
+        <a href="style-page.html" class="btn primary">Style</a>
+        <a href="shopping.html" class="btn primary">Product</a>
+        <a href="register.html" class="btn primary">Register</a>
+        <a href="login.html" class="btn primary">Login</a>
+      </section>
+    </header>
+    <!-- AKHIR NAVBAR -->
+
+    <!-- SECTION 1 -->
+    <section class="bg">
+      <h1>
+        Best Seller <br />
+        Outfit
+      </h1>
+      <h3>Click For More!</h3>
+    </section>
+
+    <!-- SECTION 1 -->
+
+    <!-- SECTION 2 -->
+    <div class="filterButton" id="filter">
+      <button class="btn active" onclick="filterSelection('all')">
+        All Product
+      </button>
+      <button class="btn" onclick="filterSelection('top')">Top</button>
+      <button class="btn" onclick="filterSelection('bottom')">Bottom</button>
+      <button class="btn" onclick="filterSelection('dress')">Dress</button>
+    </div>
+    <section class="findproduct">
+      <article class="card1 filterDiv dress" id="molly">
+        <figure>
+          <img
+            src="img/molly.jpg"
+            width="290px"
+            height="320px"
+            style="border-radius: 20px" />
+        </figure>
+        <h3>Molly Dress</h3>
+        <p>Material Cotton mettalic<br />Midi Dress, Loose fit</p>
+        <div class="cardicon">
+          <h2>Shop Now</h2>
+          <p>Rp.249.000</p>
+        </div>
+      </article>
+
+      <article class="card2 filterDiv top" id="abela">
+        <figure>
+          <img
+            src="img/abela.jpg"
+            width="290px"
+            height="320px"
+            style="border-radius: 20px" />
+        </figure>
+        <h3>Abela Top</h3>
+        <p>Material Linen<br />Short Sleeve, Collared Detail</p>
+        <div class="cardicon">
+          <h2>Shop Now</h2>
+          <p>Rp.149.000</p>
+        </div>
+      </article>
+
+      <article class="card3 filterDiv bottom" id="naomi">
+        <figure>
+          <img
+            src="img/naomi.png"
+            width="290px"
+            height="320px"
+            style="border-radius: 20px" />
+        </figure>
+        <h3>Naomi Bottom</h3>
+        <p>Material Linen<br />Midi Length, All Size</p>
+        <div class="cardicon">
+          <h2>Shop Now</h2>
+          <p>Rp.199.000</p>
+        </div>
+      </article>
+
+      <article class="card4 filterDiv top" id="yinny">
+        <figure>
+          <img
+            src="img/product top 2.png"
+            width="290px"
+            height="320px"
+            style="border-radius: 20px" />
+        </figure>
+        <h3>Yinny Top</h3>
+        <p>Material Satin<br />Long Sleeve, Two Pocket Details</p>
+        <div class="cardicon">
+          <h2>Shop Now</h2>
+          <p>Rp.249.000</p>
+        </div>
+      </article>
+
+      <article class="card5 filterDiv top" id="aleza">
+        <figure>
+          <img
+            src="img/product top 3.png"
+            width="290px"
+            height="320px"
+            style="border-radius: 20px" />
+        </figure>
+        <h3>Aleza Top</h3>
+        <p>Material Cotton<br />Loose Fit, Ruffle Details on Neck</p>
+        <div class="cardicon">
+          <h2>Shop Now</h2>
+          <p>Rp.169.000</p>
+        </div>
+      </article>
+
+      <article class="card6 filterDiv bottom" id="anara">
+        <figure>
+          <img
+            src="img/product bottom 2.jpg"
+            width="290px"
+            height="320px"
+            style="border-radius: 20px" />
+        </figure>
+        <h3>Anara Bottom</h3>
+        <p>Material Cotton<br />Belt Detail, Length Skirt</p>
+        <div class="cardicon">
+          <h2>Shop Now</h2>
+          <p>Rp.299.000</p>
+        </div>
+      </article>
+
+      <article class="card7 filterDiv bottom" id="lowie">
+        <figure>
+          <img
+            src="img/product bottom 3.png"
+            width="290px"
+            height="320px"
+            style="border-radius: 20px" />
+        </figure>
+        <h3>Lowie</h3>
+        <p>Material Semi Jeans<br />Long Pants, No Elastic Waist</p>
+        <div class="cardicon">
+          <h2>Shop Now</h2>
+          <p>Rp.249.000</p>
+        </div>
+      </article>
+
+      <article class="card8 filterDiv dress" id="norim">
+        <figure>
+          <img
+            src="img/product dress 2.png"
+            width="290px"
+            height="320px"
+            style="border-radius: 20px" />
+        </figure>
+        <h3>Norim Dress</h3>
+        <p>Material Cotton Cringkle<br />Loose Fit, Middle Length</p>
+        <div class="cardicon">
+          <h2>Shop Now</h2>
+          <p>Rp.349.000</p>
+        </div>
+      </article>
+
+      <article class="card9 filterDiv dress" id="binar ">
+        <figure>
+          <img
+            src="img/product dress 3.png"
+            width="290px"
+            height="320px"
+            style="border-radius: 20px" />
+        </figure>
+        <h3>Binar Dress</h3>
+        <p>Material Cotton Poplin<br />Midi Length, Loose Fit</p>
+        <div class="cardicon">
+          <h2>Shop Now</h2>
+          <p>Rp.249.000</p>
+        </div>
+      </article>
+    </section>
+    <!-- SECTION 2-->
+
+    <!-- FOOTER -->
+    <footer>
+      <section class="icon">
+        <img src="img/footer1.png" />
+      </section>
+      <section class="copy">Copyright &copy;2023 Viji Wear Indonesia</section>
+    </footer>
+    <!-- FOOTER -->
+
+    <script src="shopping.js"></script>
+  </body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viji Wear</title>
+    <link rel="stylesheet" href="style-page.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- AWAL NAVBAR -->
+    <header>
+        <section class="logo">
+            <p>
+                <a href="home.html">
+                    <img src="img/logo.png" width="173px" height="119px">
+                </a>
+            </p>
+            <div class="searchbar">
+                <img src="img/search.svg" fill="white" width="35px" height="35px">
+                <input type="text" id="input-box" placeholder="Fit Yourself...">
+                <div class="result-box"></div>
+            </div>
+        </section>
+
+        <section class="buttonHeader">
+            <a href="style-page.html" class="btn primary">Style</a>
+            <a href="shopping.html" class="btn primary">Product</a>
+            <a href="register.html" class="btn primary">Register</a>
+            <a href="login.html" class="btn primary">Login</a>
+        </section>
+    </header>
+    <!-- AKHIR NAVBAR -->
+    
+    <!-- SECTION 1 -->
+    <section class="carousel">
+        <div class="bg">
+            <h1> FIND YOUR <br> STYLE</h1>
+            <div class="btn-click-more">
+                <a href="#filter" class="btn click-more">Click for More!</a>
+            </div>
+        </div>
+    <!-- SECTION 1 -->
+
+    <!-- SECTION 2 -->
+    <section class="filter-style-page" id="filter">
+        <a class="btn active" onclick="filterSelection('all')">All Style</a>
+        <a class="btn" onclick="filterSelection('formal')">Formal</a>
+        <a class="btn" onclick="filterSelection('chic')">Chic</a>
+        <a class="btn" onclick="filterSelection('casual')">Casual</a>
+    </section>
+
+    <section class="product-page1">
+        <article class="card1 filterDiv formal" id="kila-top">
+            <figure>
+                <img src="img/formal-kila-top.jpg" width="290px" height="440px" style="border-radius: 20px;">
+            </figure>
+            <div class="top">
+                <div class="product-top">
+                    <h1>Kila Top</h1>
+                </div>
+                <div class="price-product-top">
+                    <h1>Rp 149.000</h1>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="product-bottom">
+                    <h1>Arne Pants</h1>
+                </div>
+                <div class="price-product-bottom">
+                    <h1>Rp 189.000</h1>
+                </div>
+            </div>
+            <h3>Formal</h3>
+            <div class="btn-shop-now">
+                <div class="circle1-logo-shop">
+                    <div class="circle2-logo-shop">
+                        <div class="circle3-logo-shop">
+                            <img src="img/logo3-shopping-cart.png" fill="white" width="30px" height="30px">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn shop now">SHOP NOW</a>
+            </div>
+        </article>
+        
+        <article class="card2 filterDiv chic" id="gale-top">
+            <figure>
+                <img src="img/chic-gale-top.jpg" width="290px" height="440px" style="border-radius: 20px;">
+            </figure>
+            <div class="top">
+                <div class="product-top">
+                    <h1>Gale Top</h1>
+                </div>
+                <div class="price-product-top">
+                    <h1>Rp 69.000</h1>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="product-bottom">
+                    <h1>Leya Skirt</h1>
+                </div>
+                <div class="price-product-bottom">
+                    <h1>Rp 129.000</h1>
+                </div>
+            </div>
+            <h3>Chic</h3>
+            <div class="btn-shop-now">
+                <div class="circle1-logo-shop">
+                    <div class="circle2-logo-shop">
+                        <div class="circle3-logo-shop">
+                            <img src="img/logo3-shopping-cart.png" fill="white" width="30px" height="30px">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn shop now">SHOP NOW</a>
+            </div>
+        </article>
+
+        <article class="card3 filterDiv casual" id="alecya-top">
+            <figure>
+                <img src="img/casual-alecya-top.jpg" width="290px" height="440px" style="border-radius: 20px;">
+            </figure>
+            <div class="top">
+                <div class="product-top">
+                    <h1>Alecya Top</h1>
+                </div>
+                <div class="price-product-top">
+                    <h1>Rp 99.000</h1>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="product-bottom">
+                    <h1>Guri Pants</h1>
+                </div>
+                <div class="price-product-bottom">
+                    <h1>Rp 219.000</h1>
+                </div>
+            </div>
+            <h3>Casual</h3>
+            <div class="btn-shop-now">
+                <div class="circle1-logo-shop">
+                    <div class="circle2-logo-shop">
+                        <div class="circle3-logo-shop">
+                            <img src="img/logo3-shopping-cart.png" fill="white" width="30px" height="30px">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn shop now">SHOP NOW</a>
+            </div>
+        </article>
+
+        <article class="card2 filterDiv formal" id="alula-top">
+            <figure>
+                <img src="img/formal-alula-top.jpg" width="290px" height="440px" style="border-radius: 20px;">
+            </figure>
+            <div class="top">
+                <div class="product-top">
+                    <h1>Alula Top</h1>
+                </div>
+                <div class="price-product-top">
+                    <h1>Rp 129.000</h1>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="product-bottom">
+                    <h1>Nayaka Pants</h1>
+                </div>
+                <div class="price-product-bottom">
+                    <h1>Rp 169.000</h1>
+                </div>
+            </div>
+            <h3>Formal</h3>
+            <div class="btn-shop-now">
+                <div class="circle1-logo-shop">
+                    <div class="circle2-logo-shop">
+                        <div class="circle3-logo-shop">
+                            <img src="img/logo3-shopping-cart.png" fill="white" width="30px" height="30px">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn shop now">SHOP NOW</a>
+            </div>
+        </article>
+
+        <article class="card3 filterDiv formal" id="huna-top">
+            <figure>
+                <img src="img/formal-huna-top.jpg" width="290px" height="440px" style="border-radius: 20px;">
+            </figure>
+            <div class="top">
+                <div class="product-top">
+                    <h1>Huna Top</h1>
+                </div>
+                <div class="price-product-top">
+                    <h1>Rp 149.000</h1>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="product-bottom">
+                    <h1>Kala Pants</h1>
+                </div>
+                <div class="price-product-bottom">
+                    <h1>Rp 169.000</h1>
+                </div>
+            </div>
+            <h3>Formal</h3>
+            <div class="btn-shop-now">
+                <div class="circle1-logo-shop">
+                    <div class="circle2-logo-shop">
+                        <div class="circle3-logo-shop">
+                            <img src="img/logo3-shopping-cart.png" fill="white" width="30px" height="30px">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn shop now">SHOP NOW</a>
+            </div>
+        </article>
+
+        <article class="card1 filterDiv chic" id="alecya-top">
+            <figure>
+                <img src="img/chic-alecya-top.jpg" width="290px" height="440px" style="border-radius: 20px;">
+            </figure>
+            <div class="top">
+                <div class="product-top">
+                    <h1>Alecya Top (B)</h1>
+                </div>
+                <div class="price-product-top">
+                    <h1>Rp 99.000</h1>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="product-bottom">
+                    <h1>Nari Skirt</h1>
+                </div>
+                <div class="price-product-bottom">
+                    <h1>Rp 159.000</h1>
+                </div>
+            </div>
+            <h3>Chic</h3>
+            <div class="btn-shop-now">
+                <div class="circle1-logo-shop">
+                    <div class="circle2-logo-shop">
+                        <div class="circle3-logo-shop">
+                            <img src="img/logo3-shopping-cart.png" fill="white" width="30px" height="30px">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn shop now">SHOP NOW</a>
+            </div>
+        </article>
+
+        <article class="card3 filterDiv chic" id="cya-top">
+            <figure>
+                <img src="img/chic-cya-top.jpg" width="290px" height="440px" style="border-radius: 20px;">
+            </figure>
+            <div class="top">
+                <div class="product-top">
+                    <h1>Cya Top</h1>
+                </div>
+                <div class="price-product-top">
+                    <h1>Rp 169.000</h1>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="product-bottom">
+                    <h1>Arne Pants (G)</h1>
+                </div>
+                <div class="price-product-bottom">
+                    <h1>Rp 199.000</h1>
+                </div>
+            </div>
+            <h3>Chic</h3>
+            <div class="btn-shop-now">
+                <div class="circle1-logo-shop">
+                    <div class="circle2-logo-shop">
+                        <div class="circle3-logo-shop">
+                            <img src="img/logo3-shopping-cart.png" fill="white" width="30px" height="30px">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn shop now">SHOP NOW</a>
+            </div>
+        </article>
+    
+        <article class="card1 filterDiv casual" id="luis-top">
+            <figure>
+                <img src="img/casual-luis-top1.jpg" width="290px" height="440px" style="border-radius: 20px;">
+            </figure>
+            <div class="top">
+                <div class="product-top">
+                    <h1>Luis Top</h1>
+                </div>
+                <div class="price-product-top">
+                    <h1>Rp 149.000</h1>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="product-bottom">
+                    <h1>Tera Pants</h1>
+                </div>
+                <div class="price-product-bottom">
+                    <h1>Rp 199.000</h1>
+                </div>
+            </div>
+            <h3>Casual</h3>
+            <div class="btn-shop-now">
+                <div class="circle1-logo-shop">
+                    <div class="circle2-logo-shop">
+                        <div class="circle3-logo-shop">
+                            <img src="img/logo3-shopping-cart.png" fill="white" width="30px" height="30px">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn shop now">SHOP NOW</a>
+            </div>
+        </article>
+        
+        <article class="card2 filterDiv casual" id="cila-top">
+            <figure>
+                <img src="img/casual-cila-dress.jpg" width="290px" height="440px" style="border-radius: 20px;">
+            </figure>
+            <div class="top">
+                <div class="product-top">
+                    <h1>Cila Dress</h1>
+                </div>
+                <div class="price-product-top">
+                    <h1>Rp 329.000</h1>
+                </div>
+            </div>
+            <div class="cila-dress">
+                <h3>Casual</h3>
+                <div class="btn-shop-now">
+                    <div class="circle1-logo-shop">
+                        <div class="circle2-logo-shop">
+                            <div class="circle3-logo-shop">
+                                <img src="img/logo3-shopping-cart.png" fill="white" width="30px" height="30px">
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn shop now">SHOP NOW</a>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- SECTION 2 -->
+
+    <!-- FOOTER -->
+    <footer>
+        <section class="icon">
+            <img src="img/footer1.png">
+        </section>
+        <section class="copy">Copyright &copy;2023 Viji Wear Indonesia</section>
+    </footer>
+    <!-- FOOTER -->
+
+    <script src="style-page.js"></script>
+</body>
+</html>

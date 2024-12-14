@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter&family=League+Spartan&family=Lexend:wght@500&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-left: 20px;
+}
+
+.logo img {
+  fill: white;
+  padding-right: 20px;
+}
+
+.searchbar {
+  background-color: #669865;
+  width: 300px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 10px;
+  margin-left: 16px;
+  transition: width 0.3s ease;
+}
+
+.searchbar input[type="text"]:focus {
+  width: 500px;
+}
+
+.searchbar img {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.result-box ul {
+  position: absolute;
+  font-family: "League Spartan", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  width: 300px;
+  height: 200px;
+  top: 98px;
+  left: 228px;
+  border-radius: 10px;
+  background: #426941;
+  max-height: 150px;
+  overflow-y: scroll;
+}
+
+.result-box ul li {
+  list-style: none;
+  border-radius: 10px;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.result-box ul li:hover {
+  background-color: #669865;
+}
+
+.buttonHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  margin-right: 20px;
+}
+
+input {
+  background-color: transparent;
+  border: 0px solid;
+  height: 100%;
+  outline: none;
+  color: white !important;
+  font-size: 20px;
+  font-family: "League Spartan", sans-serif;
+}
+
+input::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.buttonHeader a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 70px;
+  background: #ffe43d;
+  border-radius: 20px;
+  color: #ed7536;
+  text-decoration: none;
+  font-family: "League Spartan", sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.buttonHeader a:hover {
+  background: #669865;
+  color: white;
+  transition: 0.3s;
+}
+
+.carousel {
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bg {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 900px;
+  background-image: url(img/bg-style-page.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg h1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 320px;
+  padding-left: 750px;
+  font-family: "Boogaloo", cursive;
+  text-align: left;
+  font-size: 120px;
+  font-weight: 2000;
+  color: #ffe43d;
+  -webkit-text-stroke: 1px #ed7536;
+  transition: 0.5s;
+}
+
+.btn-click-more a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 70px;
+  font-size: 30px;
+  background: #ffe43d;
+  border-radius: 15px;
+  color: #ed7536;
+  text-decoration: none;
+  font-family: "League Spartan", sans-serif;
+  font-weight: bolder;
+  position: relative;
+  left: 285px;
+}
+
+.btn-click-more a:hover {
+  background: #669865;
+  color: white;
+  transition: 0.3s;
+}
+
+.filter-style-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 20px;
+  position: relative;
+  top: 50px;
+}
+
+.filter-style-page a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+  width: 140px;
+  height: 50px;
+  background: #ed7536;
+  border-radius: 20px;
+  color: #ffe43d;
+  text-decoration: none;
+  font-family: "League Spartan", sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.filter-style-page a:hover {
+  background: #669865;
+  color: white;
+  transition: 0.3s;
+}
+
+.product-page1 {
+  width: 100%;
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: wrap;
+  text-align: center;
+  column-gap: 150px;
+  row-gap: 50px;
+}
+
+.card1,
+.card2,
+.card3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  top: 150px;
+  width: 300px;
+  height: 450px;
+  border-radius: 25px;
+  background-color: white;
+  border: 3.5px solid #ed7536;
+  margin-bottom: 250px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 450px;
+  border-radius: 25px;
+  background-color: white;
+  border: 3.5px solid #ed7536;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+  box-shadow: 0px -1px 56px 0px rgba(0, 0, 0, 0.34);
+  transition: 0.3s;
+}
+
+.card1 figure,
+.card2 figure,
+.card3 figure {
+  margin-top: 5px;
+  border-radius: 10px;
+  width: 290px;
+  height: 300px;
+  background-color: rgb(109, 180, 176);
+}
+
+.top {
+  position: relative;
+  right: 120px;
+  bottom: 150px;
+}
+
+.product-top {
+  background-color: #ed7536;
+  transform: translateY(-50%);
+  padding: 8px 20px;
+  border-radius: 25px;
+  color: #ffe43d;
+  font-size: 18px;
+  width: 120px;
+  position: relative;
+  left: 20px;
+}
+
+.price-product-top {
+  background-color: #ffe43d;
+  transform: translateY(-50%);
+  padding: 8px 60px;
+  border-radius: 25px;
+  color: #000000;
+  font-size: 18px;
+}
+
+.bottom {
+  position: relative;
+  left: 120px;
+  bottom: 60px;
+}
+
+.product-bottom {
+  background-color: #ed7536;
+  transform: translateY(-50%);
+  padding: 8px 20px;
+  border-radius: 25px;
+  color: #ffe43d;
+  font-size: 18px;
+  width: 120px;
+  position: relative;
+  left: 20px;
+}
+
+.price-product-bottom {
+  background-color: #ffe43d;
+  transform: translateY(-50%);
+  padding: 8px 60px;
+  border-radius: 25px;
+  color: #000000;
+  font-size: 18px;
+}
+
+.product-page1 h3,
+.product-page2 h3,
+.product-page3 h3,
+.product-page4 h3 {
+  color: #000000;
+  font-size: 32px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.btn-shop-now {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 250px;
+  height: 50px;
+  background: #ed7536;
+  border-radius: 20px;
+  color: #ffe43d;
+  text-decoration: none;
+  font-family: "League Spartan", sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.btn-shop-now a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-left: 20px;
+  color: #ffe43d;
+  text-decoration: none;
+  font-family: "League Spartan", sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.btn-shop-now a:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+.circle1-logo-shop {
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: #ffe43d;
+  border-radius: 100%;
+  position: relative;
+  right: 20px;
+  z-index: 1;
+}
+
+.circle2-logo-shop {
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 100%;
+  position: relative;
+  z-index: 2;
+  top: 5px;
+  left: 5px;
+}
+
+.circle3-logo-shop {
+  width: 45px;
+  height: 45px;
+  background: #ffe43d;
+  border-radius: 100%;
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+.circle3-logo-shop img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #ed7536;
+  padding-left: 8px;
+  padding-top: 8px;
+}
+
+.cila-dress {
+  position: relative;
+  top: 65px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  background-color: #669865;
+}
+
+footer img {
+  padding: 5px 50px;
+  width: 300px;
+}
+
+.copy {
+  color: #ffe43d;
+  font-family: "League Spartan", sans-serif;
+  font-size: 20px;
+  padding-right: 30px;
+}
